@@ -17,11 +17,7 @@ public class ArticleDaoTest {
         articleDao.batchInsert(JSoupSpider.getArticles());
     }
 
-    @Test
-    public void selectHotArticles() throws SQLException {
-        List<ArticleVo> articleVoList = articleDao.selectHotArticles();
-        System.out.println(articleVoList.size());
-    }
+
 
     @Test
     public void getArticle() throws SQLException {
